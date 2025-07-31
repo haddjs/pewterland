@@ -76,6 +76,12 @@ body {
 	background-repeat: no-repeat;
 }
 
+.detailed {
+	background-image: url("/images/product/detailedProduct/detailedBg.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
 :root {
 	--radius: 0.625rem;
 	--background: oklch(0.2046 0 0);

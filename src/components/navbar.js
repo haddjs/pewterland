@@ -10,7 +10,7 @@ const Navbar = () => {
 	const pathname = usePathname();
 
 	return (
-		<div className="flex px-20 py-17 justify-between">
+		<div className="flex px-20 pt-17 justify-between">
 			<div>
 				<Link href="/">
 					<Image alt="logo" src="/images/logo.svg" width={110} height={30} />

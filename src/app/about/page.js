@@ -1,13 +1,13 @@
 import { Navbar } from "@/components";
-import React from "react";
+import Footer from "@/components/footer";
 
 const About = () => {
 	return (
-		<div className="about min-h-screen">
+		<div className="about flex flex-col justify-between min-h-screen">
 			<Navbar />
-			<div className="flex min-h-full">
+			<div className="flex min-h-full pb-35">
 				<div className="w-1/2">.</div>
-				<div className="w-1/2 flex flex-col justify-center gap-5 pt-30">
+				<div className="w-1/2 flex flex-col justify-center gap-5">
 					<h1 className="font-bebas text-white text-9xl">
 						PEWTERLAND OFFICIAL
 					</h1>
@@ -24,6 +24,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

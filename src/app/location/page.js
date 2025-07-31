@@ -1,12 +1,13 @@
 import { Navbar } from "@/components";
 import { pics } from "@/constants/data";
 import Image from "next/image";
+import Footer from "@/components/footer";
 
 const Location = () => {
 	return (
-		<div className="location min-h-screen">
+		<div className="location flex flex-col justify-between min-h-screen">
 			<Navbar />
-			<div className="flex justify-center gap-20">
+			<div className="flex justify-center gap-30">
 				{pics.reverse().map((item) => (
 					<Image
 						key={item.id}
@@ -17,7 +18,7 @@ const Location = () => {
 					/>
 				))}
 			</div>
-			<div className="flex flex-col gap-3 pt-10 px-[21rem]">
+			<div className="flex flex-col gap-3 px-[21rem]">
 				<h1 className="font-bebas text-white text-8xl font-bold text-center">
 					LOKASI
 				</h1>
@@ -36,6 +37,7 @@ const Location = () => {
 					Instagram kami.
 				</span>
 			</div>
+			<Footer />
 		</div>
 	);
 };
