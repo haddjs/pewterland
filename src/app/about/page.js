@@ -5,14 +5,14 @@ const About = () => {
 	return (
 		<div className="about flex flex-col justify-between min-h-screen">
 			<Navbar />
-			<div className="flex min-h-full pb-35">
-				<div className="w-1/2">.</div>
-				<div className="w-1/2 flex flex-col justify-center gap-5">
-					<h1 className="font-bebas text-white text-9xl">
+			<div className="grid grid-cols-2 min-h-full pb-25">
+				<div className="">.</div>
+				<div className="flex flex-col ps-10 gap-5">
+					<p className="font-bebas font-bold text-white text-[5.5rem] leading-20">
 						PEWTERLAND OFFICIAL
-					</h1>
-					<div className="max-w-4xl">
-						<span className="text-white text-xl">
+					</p>
+					<div className="max-w-[40rem]">
+						<span className="text-white text-sm">
 							Pewterland Indonesia adalah perusahaan kerajinan logam yang
 							berbasis di Bandung, Jawa Barat, yang mengkhususkan diri dalam
 							pembuatan berbagai produk aksesori logam custom seperti buckle

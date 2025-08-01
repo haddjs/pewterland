@@ -13,7 +13,7 @@ const Navbar = () => {
 		<div className="flex px-20 pt-17 justify-between">
 			<div>
 				<Link href="/">
-					<Image alt="logo" src="/images/logo.svg" width={110} height={30} />
+					<Image alt="logo" src="/images/logo.svg" width={90} height={30} />
 				</Link>
 			</div>
 			<div className="flex gap-8">
@@ -25,8 +25,8 @@ const Navbar = () => {
 							<span
 								className={`transition ${
 									isActive
-										? "border-1 py-2 px-5 rounded-3xl bg-white text-black"
-										: "border-1 py-2 px-5 rounded-3xl bg-none text-white hover:text-black hover:bg-white"
+										? "border-1 py-2 px-5 rounded-3xl bg-white text-black text-xs"
+										: "border-1 py-2 px-5 rounded-3xl bg-none text-white hover:text-black hover:bg-white text-xs"
 								} font-inter`}>
 								{item.title}
 							</span>

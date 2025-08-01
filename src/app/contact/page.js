@@ -12,40 +12,52 @@ const Contact = () => {
 		<>
 			<div className="contact flex flex-col justify-between min-h-screen">
 				<Navbar />
-				<div className="flex-col">
-					<div className="font-bebas text-center text-white text-[10rem]">
+				<div className="flex-col pt-20">
+					<div className="font-bebas text-center text-white text-9xl">
 						<h1>E-COMMERCE</h1>
 					</div>
 					<div className="flex justify-center gap-15">
 						{ecommerce.map((index) => (
-							<Image
-								key={index.id}
-								alt={index.desc}
-								src={index.src}
-								width={250}
-								height={100}
-								className="cursor-pointer"
-							/>
+							<a key={index.id} href={index.url} target="_blank">
+								<Image
+									alt={index.desc}
+									src={index.src}
+									width={200}
+									height={100}
+									className="cursor-pointer"
+								/>
+							</a>
 						))}
 					</div>
-					<div className="flex flex-col items-center pt-10 gap-5 text-2xl font-semibold">
+					<div className="flex flex-col items-center pt-10 gap-5 text-xl font-semibold">
 						<span className="text-white">HUBUNGI KAMI</span>
 						<div className="flex gap-2">
-							<FontAwesomeIcon
-								icon={faWhatsapp}
-								width={60}
-								className="bg-white p-2 rounded-xl cursor-pointer"
-							/>
-							<FontAwesomeIcon
-								icon={faInstagram}
-								width={60}
-								className="bg-white p-2 rounded-xl cursor-pointer"
-							/>
-							<FontAwesomeIcon
-								icon={faEnvelope}
-								width={60}
-								className="bg-white p-2 rounded-xl cursor-pointer"
-							/>
+							<a href="https://wa.me/6282262212257/" target="_blank">
+								<FontAwesomeIcon
+									icon={faWhatsapp}
+									width={50}
+									height={50}
+									className="bg-white p-2 rounded-xl cursor-pointer"
+								/>
+							</a>
+							<a
+								href="https://www.instagram.com/pewterlandofficial/"
+								target="_blank">
+								<FontAwesomeIcon
+									icon={faInstagram}
+									width={50}
+									height={50}
+									className="bg-white p-2 rounded-xl cursor-pointer"
+								/>
+							</a>
+							<a href="mailto:pewterland.official@gmail.com" target="_self">
+								<FontAwesomeIcon
+									icon={faEnvelope}
+									width={50}
+									height={50}
+									className="bg-white p-2 rounded-xl cursor-pointer"
+								/>
+							</a>
 						</div>
 					</div>
 				</div>

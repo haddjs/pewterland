@@ -40,11 +40,13 @@ export const ecommerce = [
 		id: 1,
 		src: "/images/contact/shopee.png",
 		desc: "Contact 1",
+		url: "https://shopee.co.id/pewterland.id",
 	},
 	{
 		id: 2,
 		src: "/images/contact/tokopedia.png",
 		desc: "Contact 2",
+		url: "https://tokopedia.link/H8UqUdoJtVb",
 	},
 ];
 
