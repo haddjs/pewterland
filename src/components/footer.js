@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<div className="text-white w-full text-sm flex flex-nowrap justify-center gap-20 pb-8">
+		<div className="text-white w-full text-xs flex flex-nowrap justify-center gap-20 pb-8">
 			<h1>
 				<span className="font-bold">WhatsApp: </span>
 				<span className="italic">+62 812 3456 7890</span>
