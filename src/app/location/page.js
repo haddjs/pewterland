@@ -5,7 +5,7 @@ import Footer from "@/components/footer";
 
 const Location = () => {
 	return (
-		<div className="location flex flex-col justify-between min-h-screen">
+		<div className="location flex flex-col justify-between min-h-full min-w-full lg:min-h-screen lg:min-w-screen">
 			<Navbar />
 			<div className="flex justify-center gap-10">
 				{pics.reverse().map((item) => (
@@ -38,8 +38,8 @@ const Location = () => {
 						atau DM Instagram kami.
 					</span>
 				</div>
-				<Footer />
 			</div>
+			<Footer />
 		</div>
 	);
 };
